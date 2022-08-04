@@ -1,5 +1,14 @@
 import { useState, useEffect } from 'react';
 import { getPostsPage } from '../api/axios';
+// export const api = axios.create({ baseURL: 'https://jsonplaceholder.typicode.com' });
+
+// export const getPostsPage = async (pageParam, option = {}) => {
+//   console.log({ pageParam });
+//   const resp = await api.get(`posts?_page=${pageParam}`, option);
+
+//   console.log(resp);
+//   return resp.data;
+// };
 
 const usePosts = (pageNum = 1) => {
   const [results, setResults] = useState([]);
